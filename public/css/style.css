@@ -1,0 +1,12 @@
+.custom {
+    background-color: #3e2210; /* Custom background color */
+  }
+.pri-btn{
+  background-color: #3e2210;
+  }
+  .sec-btn{
+  border-color: #3e2210;
+  }
+  .btn:hover {
+    background-color:#3e2210; 
+    border-color:#3e2210 ;}
