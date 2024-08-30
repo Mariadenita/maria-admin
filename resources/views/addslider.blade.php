@@ -2,9 +2,16 @@
 @section('title','')
 @section('main-content')
 <div class="container my-5">
-<div class="row justify-content-center">
+@if (session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
+<h6 class="p-1">Slider Management > Add Slider</h6>
+<div class="row justify-content-center p-3">
 <div class="col-md-6 p-5 ani-form ">
-    <form action="">
+<form action="{{ route('upload-slider') }}" method="POST" enctype="multipart/form-data">
+@csrf
     <div class="upload-box large-upload-box mb-3" id="largeUploadBox" onclick="triggerUpload('largeImageInput')">
                 <span class="plus-symbol" id="largePlusSymbol">+</span>
                 <input type="file" id="largeImageInput" name="large_image" class="form-control" accept="image/*" onchange="previewImage('largeImageInput', 'largeImagePreview', 'largePlusSymbol', 'largeDeleteBtn')">
@@ -15,8 +22,8 @@
         <label for="slider" class="mb-1">Slider</label>
         <input type="text" class="form-control border-black" id="slider" name="slider">
     </div>
-    <div class="button_name">
-        <label for="usr" class="mb-1"> Button Name</label>
+    <div class=" mb-3">
+        <label for="ubutton_name" class="mb-1"> Button Name</label>
         <input type="text" class="form-control border-black" id="button_name" name="button_name">
     </div>
     <div class="mb-3">

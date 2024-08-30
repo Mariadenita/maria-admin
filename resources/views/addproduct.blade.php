@@ -43,7 +43,7 @@
     <label for="category" class="form-label">Category</label>
     <select id="category" class="form-select  border-black @error('category') is-invalid @enderror" name="category">
       <option selected></option>
-      <option value="option1">Option 1</option>
+      <option value="option1">Battery</option>
       <option value="option2">Option 2</option>
       <!-- Add more options as needed -->
     </select>

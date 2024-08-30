@@ -32,9 +32,9 @@ function displayProducts(page) {
                 <div class="product-card p-3">
                     <img src="${product.image}" alt="${product.name}" class="product-image rounded">
                     <div class="product-info mx-2">
-                        <h5 class="m-0">${product.name}</h5>
-                        <p class="m-0">${product.category}</p>
-                        <p class="m-0">${product.price}</p>
+                        <h5 class="m-0 text-start">${product.name}</h5>
+                        <p class="m-0 text-start">${product.category}</p>
+                        <p class="m-0 text-start">${product.price}</p>
                     </div>
                     <div class="action-buttons d-flex position-absolute top-0 end-0 p-4">
                         <a href="/edit_product/${product.id}" class="action-button pe-2"><i class="fas fa-pencil-alt text-dark"></i></a>

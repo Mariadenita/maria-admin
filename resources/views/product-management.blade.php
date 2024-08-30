@@ -6,8 +6,8 @@
       <div class="d-flex justify-content-end pt-3">
       <a href="{{ route('addproduct') }}" class="btn pri-btn text-white"> <i class="fas fa-plus me-2"></i>ADD NEW PRODUCT</a>
       </div>
-      <div class="d-flex justify-content-end pt-3 pb-3">
-          <button class="btn sec-btn rounded-3">Category Management</button>
+      <div class="d-flex justify-content-end py-3">
+      <a href="{{ route('category') }}" class="btn sec-btn rounded-3">Category Management </a>
       </div>
 </div>
 
